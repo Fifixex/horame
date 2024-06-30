@@ -22,12 +22,11 @@ app.use(
 
 // app.route("/auth", loginRoute);
 
-import { Page } from './Page'
+import { Page } from "./Page";
 
-app.get('/', (c) => {
+app.get("/", (c) => {
   return c.html(<Page />);
-})
-
+});
 
 console.log(`Server is running on port ${PORT}`);
 
