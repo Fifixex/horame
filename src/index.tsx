@@ -1,8 +1,6 @@
 import { Hono } from "hono";
 import { Page } from "./Page";
 
-const app = new Hono().basePath("/api/v9");
+export const app = new Hono()
 
 app.get("/", (c) =>  c.html(<Page />));
-
-export { app };
