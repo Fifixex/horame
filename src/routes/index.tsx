@@ -1,3 +1,3 @@
-import { loginRoute } from "./login";
+import {loginRoute} from './login'
 
-export default loginRoute;
+export default loginRoute

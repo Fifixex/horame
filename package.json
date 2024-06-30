@@ -13,6 +13,7 @@
     "@biomejs/biome": "1.8.3",
     "@types/node": "^20.11.17",
     "czg": "^1.9.3",
+    "tsx": "^4.16.0",
     "typescript": "^5.4.3"
   }
 }

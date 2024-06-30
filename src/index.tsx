@@ -1,11 +1,11 @@
-import { Hono } from "hono";
-import { Page } from "./Page";
+import {Hono} from 'hono'
+import {Page} from './Page'
 
-import Routes from "./routes";
+import Routes from './routes'
 
-export const app = new Hono();
+export const app = new Hono()
 
-app.get("/", (c) => c.html(<Page />));
+app.get('/', c => c.html(<Page />))
 
-app.get("/health", (c) => c.text("Ok!"));
-app.route("/api/v9", Routes);
+app.get('/health', c => c.text('Ok!'))
+app.route('/api/v9', Routes)

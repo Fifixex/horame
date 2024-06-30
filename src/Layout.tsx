@@ -1,4 +1,4 @@
-import type { FC, PropsWithChildren } from "hono/jsx";
+import type {FC, PropsWithChildren} from 'hono/jsx'
 
 export const Layout: FC<PropsWithChildren> = (props: PropsWithChildren) => {
   return (
@@ -36,5 +36,5 @@ export const Layout: FC<PropsWithChildren> = (props: PropsWithChildren) => {
         <div id="app-mount">{props.children}</div>
       </body>
     </html>
-  );
-};
+  )
+}
