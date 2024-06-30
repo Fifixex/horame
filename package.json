@@ -1,16 +1,19 @@
 {
-    "name": "app",
-    "scripts": {
-        "dev": "tsx watch src/index.ts",
-        "format": "prettier --write . --cache"
-    },
-    "dependencies": {
-        "@hono/node-server": "^1.11.4",
-        "hono": "^4.4.9"
-    },
-    "devDependencies": {
-        "@types/node": "^20.11.17",
-        "prettier": "^3.3.2",
-        "tsx": "^4.7.1"
-    }
+  "name": "app",
+  "scripts": {
+    "build": "echo 💸",
+    "dev": "tsx watch src/index.tsx",
+    "commit": "czg",
+    "format": "biome check --write ."
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.11.4",
+    "hono": "^4.4.9"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/node": "^20.11.17",
+    "czg": "^1.9.3",
+    "tsx": "^4.7.1"
+  }
 }
