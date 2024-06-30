@@ -1,10 +1,10 @@
 import { Hono } from "hono";
 import { Page } from "./Page";
 
-import routes from './routes'
+import routes from "./routes";
 
-export const app = new Hono()
+export const app = new Hono();
 
-app.get("/", (c) =>  c.html(<Page />));
+app.get("/", (c) => c.html(<Page />));
 
-routes.forEach((route) => app.route('/api/v9', route))
+routes.map((route) => app.route("/api/v9", route));

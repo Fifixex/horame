@@ -1,13 +1,6 @@
 import { Hono } from "hono";
-import { createLogin } from "../lib/utils";
+import { loginRoute } from "./login";
 
-const loginRoute = new Hono();
+export const indexRoute = new Hono().get("/health", (c) => c.text("Ok!"));
 
-loginRoute.post("/login", async (c) => {
-  const { login, password } = await c.req.json();
-
-  const response = await createLogin(login, password);
-  return c.json(response);
-});
-
-export default [loginRoute]
+export default [indexRoute, loginRoute];

@@ -1,19 +1,30 @@
 import type { FC, PropsWithChildren } from "hono/jsx";
 
-
 export const Layout: FC<PropsWithChildren> = (props: PropsWithChildren) => {
   return (
     <html lang="en">
       <head>
         <meta charset="utf-8" />
-        <meta content="width=device-width,initial-scale=1,maximum-scale=3" name="viewport" />
+        <meta
+          content="width=device-width,initial-scale=1,maximum-scale=3"
+          name="viewport"
+        />
 
         {/*section:seometa*/}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Discord" />
-        <meta property="og:title" content="Discord - Group Chat That’s All Fun &amp; Games" />
-        <meta property="og:description" content="Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out." />
-        <meta property="og:image" content="https://cdn.discordapp.com/assets/og_img_discord_home.png" />
+        <meta
+          property="og:title"
+          content="Discord - Group Chat That’s All Fun &amp; Games"
+        />
+        <meta
+          property="og:description"
+          content="Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out."
+        />
+        <meta
+          property="og:image"
+          content="https://cdn.discordapp.com/assets/og_img_discord_home.png"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@discord" />
         <meta name="twitter:creator" content="@discord" />
