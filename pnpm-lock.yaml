@@ -42,11 +42,14 @@ importers:
         specifier: ^4.4.10
         version: 4.4.11
     devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
       typescript:
         specifier: ^5.5.2
         version: 5.5.3
 
-  packages/config-typescript: {}
+  packages/typescript-config: {}
 
   packages/ui:
     dependencies:
@@ -59,7 +62,7 @@ importers:
         version: 1.8.3
       '@repo/typescript-config':
         specifier: workspace:*
-        version: link:../config-typescript
+        version: link:../typescript-config
 
 packages:
 
