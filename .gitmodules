@@ -1,0 +1,3 @@
+[submodule "apps/porn-spammer"]
+	path = apps/porn-spammer
+	url = https://github.com/RevoltSec/lujuria.git
