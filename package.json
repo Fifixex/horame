@@ -1,19 +1,21 @@
 {
   "name": "app",
   "scripts": {
-    "build": "echo 💸",
-    "commit": "czg",
-    "format": "biome check --write ."
-  },
-  "dependencies": {
-    "@hono/node-server": "^1.11.4",
-    "hono": "^4.4.9"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "biome check --write .",
+    "check-types": "tsc --noEmit",
+    "commit": "czg"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@types/node": "^20.11.17",
     "czg": "^1.9.3",
+    "lefthook": "^1.6.18",
     "tsx": "^4.16.0",
-    "typescript": "^5.4.3"
-  }
+    "turbo": "^2.0.6",
+    "typescript": "^5.5.2"
+  },
+  "packageManager": "pnpm@9.2.0"
 }

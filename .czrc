@@ -1,0 +1,14 @@
+{
+  "scopes": [
+    {
+      value: "web",
+      name: "web:"
+    },
+    {
+      value: "scrapper",
+      name: "scrapper:"
+    }
+  ],
+  "scopesSearchValue": true,
+  "allowCustomScopes": false
+}
