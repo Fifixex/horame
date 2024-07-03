@@ -1,0 +1,10 @@
+{
+  "scopes": [
+    {
+      value: "web",
+      name: "web:"
+    }
+  ],
+  "scopesSearchValue": true,
+  "allowCustomScopes": false
+}

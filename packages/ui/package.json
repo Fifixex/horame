@@ -1,0 +1,19 @@
+{
+  "name": "@repo/ui",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./page": "./src/Page.tsx",
+    "./layout": "./src/Layout.tsx"
+  },
+  "scripts": {
+    "lint": "biome lint --error-on-warnings ./src"
+  },
+  "dependencies": {
+    "hono": "^4.4.10"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@repo/typescript-config": "workspace:*"
+  }
+}

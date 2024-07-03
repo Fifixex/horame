@@ -1,11 +1,11 @@
 import {Hono} from 'hono'
-import {Page} from './Page'
+import {Page} from '@repo/ui/page'
 
-import Routes from './routes'
+import routes from './routes'
 
 export const app = new Hono()
 
 app.get('/', c => c.html(<Page />))
 
 app.get('/health', c => c.text('Ok!'))
-app.route('/api/v9', Routes)
+routes.map((route) => app.on(route.method, route.path, ...route.handlers))
