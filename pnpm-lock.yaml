@@ -27,6 +27,39 @@ importers:
         specifier: ^5.5.2
         version: 5.5.2
 
+  apps/test: {}
+
+  apps/web:
+    dependencies:
+      '@hono/node-server':
+        specifier: ^1.11.4
+        version: 1.12.0
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+      hono:
+        specifier: ^4.4.10
+        version: 4.4.11
+    devDependencies:
+      typescript:
+        specifier: ^5.5.2
+        version: 5.5.2
+
+  packages/config-typescript: {}
+
+  packages/ui:
+    dependencies:
+      hono:
+        specifier: ^4.4.10
+        version: 4.4.11
+    devDependencies:
+      '@biomejs/biome':
+        specifier: ^1.8.3
+        version: 1.8.3
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../config-typescript
+
 packages:
 
   '@biomejs/biome@1.8.3':
@@ -220,6 +253,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@hono/node-server@1.12.0':
+    resolution: {integrity: sha512-e6oHjNiErRxsZRZBmc2KucuvY3btlO/XPncIpP2X75bRdTilF9GLjm3NHvKKunpJbbJJj31/FoPTksTf8djAVw==}
+    engines: {node: '>=18.14.1'}
+
   '@types/node@20.14.9':
     resolution: {integrity: sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg==}
 
@@ -240,6 +277,10 @@ packages:
 
   get-tsconfig@4.7.5:
     resolution: {integrity: sha512-ZCuZCnlqNzjb4QprAzXKdpp/gh6KTxSJuw3IBsPnV/7fV4NxC9ckB+vPTt8w7fJA0TaSD7c55BR47JD6MEDyDw==}
+
+  hono@4.4.11:
+    resolution: {integrity: sha512-R5RADpjoRsR3/VsnFovpsYNLPnC1f+FgdfsePk3qIgjb4D41Sg7uW5QCj41kzEOwXCjBg0sVvOZMvUNZ0DKB7g==}
+    engines: {node: '>=16.0.0'}
 
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
@@ -397,6 +438,8 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
+  '@hono/node-server@1.12.0': {}
+
   '@types/node@20.14.9':
     dependencies:
       undici-types: 5.26.5
@@ -435,6 +478,8 @@ snapshots:
   get-tsconfig@4.7.5:
     dependencies:
       resolve-pkg-maps: 1.0.0
+
+  hono@4.4.11: {}
 
   resolve-pkg-maps@1.0.0: {}
 
