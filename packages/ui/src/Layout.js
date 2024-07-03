@@ -1,8 +1,0 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Layout = void 0;
-const jsx_runtime_1 = require("hono/jsx/jsx-runtime");
-const Layout = (props) => {
-    return ((0, jsx_runtime_1.jsxs)("html", { lang: "en", children: [(0, jsx_runtime_1.jsxs)("head", { children: [(0, jsx_runtime_1.jsx)("meta", { charset: "utf-8" }), (0, jsx_runtime_1.jsx)("meta", { content: "width=device-width,initial-scale=1,maximum-scale=3", name: "viewport" }), (0, jsx_runtime_1.jsx)("meta", { property: "og:type", content: "website" }), (0, jsx_runtime_1.jsx)("meta", { property: "og:site_name", content: "Discord" }), (0, jsx_runtime_1.jsx)("meta", { property: "og:title", content: "Discord - Group Chat That\u2019s All Fun & Games" }), (0, jsx_runtime_1.jsx)("meta", { property: "og:description", content: "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out." }), (0, jsx_runtime_1.jsx)("meta", { property: "og:image", content: "https://cdn.discordapp.com/assets/og_img_discord_home.png" }), (0, jsx_runtime_1.jsx)("meta", { name: "twitter:card", content: "summary_large_image" }), (0, jsx_runtime_1.jsx)("meta", { name: "twitter:site", content: "@discord" }), (0, jsx_runtime_1.jsx)("meta", { name: "twitter:creator", content: "@discord" }), (0, jsx_runtime_1.jsx)("link", { rel: "icon", href: "/assets/favicon.ico" }), (0, jsx_runtime_1.jsx)("link", { href: "/assets/12633.4d84ef209b92b5896931.css", rel: "stylesheet" })] }), (0, jsx_runtime_1.jsx)("body", { children: (0, jsx_runtime_1.jsx)("div", { id: "app-mount", children: props.children }) })] }));
-};
-exports.Layout = Layout;

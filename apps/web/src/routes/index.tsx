@@ -1,29 +1,29 @@
-import { MiddlewareHandler, Handler, Hono } from "hono";
-import { createFactory } from "hono/factory";
+import {type Handler, Hono, type MiddlewareHandler} from 'hono'
+import {createFactory} from 'hono/factory'
 
-import { loginRoute } from "./login";
+import {loginRoute} from './login'
 
-type Methods = ["get", "post", "put", "delete", "options", "patch"][number];
+type Methods = ['get', 'post', 'put', 'delete', 'options', 'patch'][number]
 
 interface Routes {
-  path: string;
-  method: Methods;
-  handlers: (Handler | MiddlewareHandler)[];
+  path: string
+  method: Methods
+  handlers: (Handler | MiddlewareHandler)[]
 }
 
-const factory = createFactory();
+const factory = createFactory()
 
 const routes: Routes[] = [
   {
-    path: "/login",
-    method: "post",
+    path: '/login',
+    method: 'post',
     handlers: factory.createHandlers(loginRoute),
   },
   {
-    path: "/register",
-    method: "get",
-    handlers: factory.createHandlers((c) => c.text("Test")),
+    path: '/register',
+    method: 'get',
+    handlers: factory.createHandlers(c => c.text('Test')),
   },
-];
+]
 
-export default routes;
+export default routes
