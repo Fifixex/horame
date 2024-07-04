@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./page": "./src/Page.tsx",
-    "./layout": "./src/Layout.tsx"
+    "./page": "./src/page.tsx",
+    "./layout": "./src/layout.tsx"
   },
   "scripts": {
     "lint": "biome lint --error-on-warnings ./src"

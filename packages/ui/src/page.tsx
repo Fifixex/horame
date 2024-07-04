@@ -1,6 +1,6 @@
 import {css} from 'hono/css'
 import type {FC} from 'hono/jsx'
-import {Layout} from './Layout'
+import {Layout} from './layout'
 
 // Estilo CSS utilizando el módulo 'hono/css'
 const containerStyle = css`
