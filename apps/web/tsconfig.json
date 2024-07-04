@@ -9,12 +9,10 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "target": "ESNext",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
+    "moduleResolution": "Node",
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
     "declaration": true
   },
-
-  "include": ["api/**/*.ts", "src/**/*.ts", "src/**/*.tsx"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "api/**/*.ts"]
 }

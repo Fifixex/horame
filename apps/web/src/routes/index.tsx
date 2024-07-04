@@ -1,4 +1,4 @@
-import {type Handler, Hono, type MiddlewareHandler} from 'hono'
+import type {Handler, MiddlewareHandler} from 'hono'
 import {createFactory} from 'hono/factory'
 
 import {loginRoute} from './login'
@@ -15,12 +15,12 @@ const factory = createFactory()
 
 const routes: Routes[] = [
   {
-    path: '/login',
+    path: '/auth/login',
     method: 'post',
     handlers: factory.createHandlers(loginRoute),
   },
   {
-    path: '/register',
+    path: '/auth/register',
     method: 'get',
     handlers: factory.createHandlers(c => c.text('Test')),
   },

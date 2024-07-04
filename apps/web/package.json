@@ -2,7 +2,9 @@
   "name": "web",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 🔥"
+    "build": "echo 🔥",
+    "lint": "biome lint --error-on-warnings ./src",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
@@ -11,6 +13,7 @@
   },
   "devDependencies": {
     "typescript": "^5.5.2",
+    "@biomejs/biome": "^1.8.3",
     "@repo/typescript-config": "workspace:*"
   }
 }

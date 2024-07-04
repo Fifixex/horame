@@ -1,4 +1,4 @@
-import {Page} from '@repo/ui/page'
+import {Page} from '@repo/ui/src/page'
 import {Hono} from 'hono'
 
 import routes from './routes'
