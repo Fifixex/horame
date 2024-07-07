@@ -7,8 +7,8 @@ import {type DatabaseUser, sql} from '../lib/database'
 dotenv.config()
 
 const adapter = new NeonHTTPAdapter(sql, {
-  user: 'auth_user',
-  session: 'user_session',
+  user: 'user',
+  session: 'session',
 })
 
 export const lucia = new Lucia(adapter, {
