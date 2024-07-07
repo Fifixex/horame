@@ -1,18 +1,10 @@
 {
   "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "Node",
     "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx",
-    "declaration": true
+    "jsxImportSource": "hono/jsx"
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "api/**/*.ts"]
 }
