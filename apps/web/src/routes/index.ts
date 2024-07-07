@@ -1,9 +1,6 @@
 import type {Handler, MiddlewareHandler} from 'hono'
 import {createFactory} from 'hono/factory'
-
-import {loginRoute} from './login'
-
-type Methods = ['get', 'post', 'put', 'delete', 'options', 'patch'][number]
+import {router} from '../lib/router'
 
 interface Routes {
   path: string
@@ -17,12 +14,17 @@ const routes: Routes[] = [
   {
     path: '/auth/login',
     method: 'post',
-    handlers: factory.createHandlers(loginRoute),
+    handlers: factory.createHandlers(router),
   },
   {
     path: '/auth/register',
-    method: 'get',
-    handlers: factory.createHandlers(c => c.text('Test')),
+    method: 'post',
+    handlers: factory.createHandlers(router),
+  },
+  {
+    path: '/unique-username/username-attempt-unauthed',
+    method: 'post',
+    handlers: factory.createHandlers(router),
   },
 ]
 
