@@ -1,10 +1,7 @@
 import {NeonHTTPAdapter} from '@lucia-auth/adapter-postgresql'
 import {Discord} from 'arctic'
-import dotenv from 'dotenv'
 import {Lucia} from 'lucia'
 import {type DatabaseUser, sql} from '../lib/database'
-
-dotenv.config()
 
 const adapter = new NeonHTTPAdapter(sql, {
   user: 'user',

@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "echo 🔥",
+    "dev": "tsx src/index.tsx",
     "lint": "biome lint --error-on-warnings ./src",
     "check-types": "tsc --noEmit"
   },
@@ -12,9 +13,11 @@
     "@lucia-auth/adapter-postgresql": "^3.1.2",
     "@neondatabase/serverless": "^0.9.4",
     "@repo/ui": "workspace:*",
+    "@t3-oss/env-core": "^0.10.1",
     "arctic": "^1.9.1",
     "hono": "^4.4.10",
-    "lucia": "^3.2.0"
+    "lucia": "^3.2.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
