@@ -1,12 +1,12 @@
-import {Page} from '@repo/ui/src/page'
+import {Layout} from '@repo/ui/layout'
 import {Hono} from 'hono'
-
 import {authDiscord} from './routes/discord'
 import routes from './routes/index'
 
 export const app = new Hono()
 
-app.get('/', c => c.html(<Page />))
+app.get('*', Layout)
+app.get('/', c => c.render(''))
 app.route('/', authDiscord)
 
 routes.map(route =>
