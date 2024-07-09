@@ -3,26 +3,22 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "echo 🔥",
-    "dev": "tsx src/index.tsx",
+    "build": "tsup && echo 🔥",
+    "dev": "tsx src/index.ts",
     "lint": "biome lint --error-on-warnings ./src",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@hono/node-server": "^1.11.4",
-    "@lucia-auth/adapter-postgresql": "^3.1.2",
-    "@neondatabase/serverless": "^0.9.4",
     "@repo/ui": "workspace:*",
-    "@t3-oss/env-core": "^0.10.1",
-    "arctic": "^1.9.1",
     "hono": "^4.4.10",
-    "lucia": "^3.2.0",
-    "zod": "^3.23.8"
+    "oslo": "^1.2.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@repo/typescript-config": "workspace:*",
     "dotenv": "^16.4.5",
+    "tsup": "^8.1.0",
     "typescript": "^5.5.2"
   }
 }

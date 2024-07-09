@@ -1,8 +1,6 @@
 import {html} from 'hono/html'
-import {jsxRenderer} from 'hono/jsx-renderer'
 
-export const Layout = jsxRenderer(({children}) => {
-  return html`
+export const Layout = () => html`
     <!DOCTYPE html>
     <html>
       <head>
@@ -52,14 +50,14 @@ export const Layout = jsxRenderer(({children}) => {
         <!-- section:title -->
         <title>Discord</title>
         <!-- endsection -->
-        <link rel="icon" href="/assets/favicon.ico" /><link href="/assets/12633.bb59c3b8d0e17096489a.css" rel="stylesheet" />
+        <link rel="icon" href="/assets/favicon.ico" /><link href="/assets/12633.4d84ef209b92b5896931.css" rel="stylesheet" />
       </head>
       <body>
         <div id="app-mount">
-          ${children}
         </div>
+        <script nonce="">window.__OVERLAY__=/overlay/.test(location.pathname)</script>
+        <script nonce="">window.__BILLING_STANDALONE__=/^\\/billing/.test(location.pathname)</script>
         <script src="/assets/web.3e849ca97f18986397a1.js" defer></script><script nonce="MjMyLDEyMCw4Nyw0NywxMzYsMTY2LDIyNywxODc=">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.nonce='MjMyLDEyMCw4Nyw0NywxMzYsMTY2LDIyNywxODc=';d.innerHTML="window.__CF$cv$params={r:'89fca41748fac199',t:'MTcyMDQwNTcwNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='MjMyLDEyMCw4Nyw0NywxMzYsMTY2LDIyNywxODc=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
       </body>
     </html>
-  `
-})
+`

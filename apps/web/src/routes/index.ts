@@ -1,6 +1,6 @@
 import type {Handler, MiddlewareHandler} from 'hono'
 import {createFactory} from 'hono/factory'
-import {router} from '../lib/router'
+import {router} from '../lib/router.js'
 
 interface Routes {
   path: string

@@ -1,14 +1,13 @@
-import {OAuth2RequestError, generateState} from 'arctic'
 import {Hono} from 'hono'
 import {getCookie, setCookie} from 'hono/cookie'
-import {generateId} from 'lucia'
-import {discord, lucia} from '../lib/auth'
+import {OAuth2RequestError, generateState} from 'oslo/oauth2'
+import {createAuthorizationURL} from '../lib/utils.js'
 
-export const authDiscord = new Hono()
+const app = new Hono()
 
-authDiscord.get('/login/discord', async c => {
+app.get('/login/discord', async c => {
   const state = generateState()
-  const url = await discord.createAuthorizationURL(state)
+  const url = await createAuthorizationURL(state, {scopes: ['identify', 'guilds.join']})
   setCookie(c, 'discord_oauth_state', state, {
     path: '/',
     secure: process.env.NODE_ENV === 'production',
@@ -19,7 +18,7 @@ authDiscord.get('/login/discord', async c => {
   return c.redirect(url.toString())
 })
 
-authDiscord.get('/login/discord/callback', async c => {
+app.get('/login/discord/callback', async c => {
   const code = c.req.query('code')?.toString() ?? null
   const state = c.req.query('state')?.toString() ?? null
   const storedState = getCookie(c).discord_oauth_state ?? null
@@ -27,12 +26,6 @@ authDiscord.get('/login/discord/callback', async c => {
     return c.body(null, 400)
   }
   try {
-    const userId = generateId(15)
-    const session = await lucia.createSession(userId, {})
-    c.header('Set-Cookie', lucia.createSessionCookie(session.id).serialize(), {
-      append: true,
-    })
-
     return c.redirect('/')
   } catch (error) {
     if (
@@ -44,3 +37,5 @@ authDiscord.get('/login/discord/callback', async c => {
     return c.body(null, 500)
   }
 })
+
+export default app

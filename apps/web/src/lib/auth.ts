@@ -1,36 +1,11 @@
-import {NeonHTTPAdapter} from '@lucia-auth/adapter-postgresql'
-import {Discord} from 'arctic'
-import {Lucia} from 'lucia'
-import {type DatabaseUser, sql} from '../lib/database'
+import {OAuth2Client} from 'oslo/oauth2'
 
-const adapter = new NeonHTTPAdapter(sql, {
-  user: 'user',
-  session: 'session',
-})
+const authorizeEndpoint = 'https://discord.com/oauth2/authorize'
+const tokenEndpoint = 'https://discord.com/api/oauth2/token'
 
-export const lucia = new Lucia(adapter, {
-  sessionCookie: {
-    attributes: {
-      secure: process.env.NODE_ENV === 'production',
-    },
-  },
-  getUserAttributes: attributes => {
-    return {
-      discordId: attributes.discord_id,
-      username: attributes.username,
-    }
-  },
-})
-
-export const discord = new Discord(
+export const client = new OAuth2Client(
   process.env.DISCORD_CLIENT_ID!,
-  process.env.DISCORD_CLIENT_SECRET!,
-  process.env.DISCORD_CALLBACK_URL!
+  authorizeEndpoint,
+  tokenEndpoint,
+  {redirectURI: process.env.DISCORD_CALLBACK_URL!}
 )
-
-declare module 'lucia' {
-  interface Register {
-    Lucia: typeof lucia
-    DatabaseUserAttributes: Omit<DatabaseUser, 'id'>
-  }
-}
