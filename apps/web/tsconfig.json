@@ -1,18 +1,9 @@
 {
-  "extends": "@repo/typescript-config/base.json",
+  "extends": "@repo/typescript-config/node.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "target": "ESNext",
-    "moduleResolution": "Node",
-    "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx",
-    "declaration": true
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "api/**/*.ts"]
+  "include": ["src", "api"]
 }

@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./page": "./src/page.tsx",
     "./layout": "./src/layout.tsx"
   },
   "scripts": {
