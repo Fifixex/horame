@@ -40,7 +40,7 @@ importers:
         version: link:../../packages/ui
       hono:
         specifier: ^4.4.10
-        version: 4.4.11
+        version: 4.5.1
       oslo:
         specifier: ^1.2.1
         version: 1.2.1
@@ -64,7 +64,7 @@ importers:
     dependencies:
       hono:
         specifier: ^4.4.10
-        version: 4.4.11
+        version: 4.5.1
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.8.3
@@ -885,8 +885,8 @@ packages:
     resolution: {integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==}
     engines: {node: '>=10'}
 
-  hono@4.4.11:
-    resolution: {integrity: sha512-R5RADpjoRsR3/VsnFovpsYNLPnC1f+FgdfsePk3qIgjb4D41Sg7uW5QCj41kzEOwXCjBg0sVvOZMvUNZ0DKB7g==}
+  hono@4.5.1:
+    resolution: {integrity: sha512-6q8AugoWG5wlrjdGG8OFFiqEsPlPGjODjUik48sEJeko4Tae1UsLS2vUiYHLEJx1gJvOZa4BWkQC+urwDmkEvQ==}
     engines: {node: '>=16.0.0'}
 
   human-signals@2.1.0:
@@ -1897,7 +1897,7 @@ snapshots:
       merge2: 1.4.1
       slash: 3.0.0
 
-  hono@4.4.11: {}
+  hono@4.5.1: {}
 
   human-signals@2.1.0: {}
 
