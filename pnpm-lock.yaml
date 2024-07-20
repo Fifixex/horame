@@ -16,7 +16,7 @@ importers:
         version: 20.14.11
       czg:
         specifier: ^1.9.3
-        version: 1.9.3
+        version: 1.9.4
       lefthook:
         specifier: ^1.6.18
         version: 1.7.4
@@ -798,8 +798,8 @@ packages:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
     engines: {node: '>= 8'}
 
-  czg@1.9.3:
-    resolution: {integrity: sha512-2RDFcHpVrG0eWGPodkcDQ9QdaF8xVf54PMP0GdXyiz3sCKvxsHvQ/AEvz9TPndZONCajHgU7uN64MQdrHLDSYA==}
+  czg@1.9.4:
+    resolution: {integrity: sha512-x9V/FXA3XUmK6PMvP2WC3WPTA4xAUCcjFcL6HxJSLUAn4gKshMHWLkIfWSCsEqmenn5IIX0/L7NuBJ7/luDqCA==}
     engines: {node: '>=v12.20.0'}
     hasBin: true
 
@@ -1759,7 +1759,7 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  czg@1.9.3: {}
+  czg@1.9.4: {}
 
   debug@4.3.5:
     dependencies:
