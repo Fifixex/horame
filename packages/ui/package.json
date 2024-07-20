@@ -2,17 +2,22 @@
   "name": "@repo/ui",
   "version": "0.0.0",
   "private": true,
+  "types": "./dist/layout.d.mts",
   "exports": {
-    "./layout": "./src/layout.tsx"
+    ".": "./dist/layout.mjs"
   },
+  "files": ["dist/**"],
   "scripts": {
-    "lint": "biome lint --error-on-warnings ./src"
+    "build": "tsup",
+    "lint": "biome lint --error-on-warnings ./src",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "hono": "^4.4.10"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
-    "@repo/typescript-config": "workspace:*"
+    "@repo/typescript-config": "workspace:*",
+    "tsup": "^8.1.2"
   }
 }
