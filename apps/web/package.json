@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "build": "tsc && echo 🔥",
-    "dev": "tsx ./hono.ts",
+    "dev": "tsx ./hono.tsx",
     "lint": "biome lint --error-on-warnings ./src",
-    "check-types": "tsc --noEmit"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@hono/node-server": "^1.11.4",
