@@ -22,7 +22,7 @@ importers:
         version: 1.6.18
       tsx:
         specifier: ^4.16.0
-        version: 4.16.0
+        version: 4.16.2
       turbo:
         specifier: ^2.0.6
         version: 2.0.7
@@ -74,7 +74,7 @@ importers:
         version: link:../typescript-config
       tsup:
         specifier: ^8.1.2
-        version: 8.1.2(tsx@4.16.0)(typescript@5.5.3)
+        version: 8.1.2(tsx@4.16.2)(typescript@5.5.3)
 
 packages:
 
@@ -870,8 +870,8 @@ packages:
     resolution: {integrity: sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==}
     engines: {node: '>=10'}
 
-  get-tsconfig@4.7.5:
-    resolution: {integrity: sha512-ZCuZCnlqNzjb4QprAzXKdpp/gh6KTxSJuw3IBsPnV/7fV4NxC9ckB+vPTt8w7fJA0TaSD7c55BR47JD6MEDyDw==}
+  get-tsconfig@4.7.6:
+    resolution: {integrity: sha512-ZAqrLlu18NbDdRaHq+AKXzAmqIUPswPWKUchfytdAjiRFnCe5ojG2bstg6mRiZabkKfCoL/e98pbBELIV/YCeA==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -1209,8 +1209,8 @@ packages:
       typescript:
         optional: true
 
-  tsx@4.16.0:
-    resolution: {integrity: sha512-MPgN+CuY+4iKxGoJNPv+1pyo5YWZAQ5XfsyobUG+zoKG7IkvCPLZDEyoIb8yLS2FcWci1nlxAqmvPlFWD5AFiQ==}
+  tsx@4.16.2:
+    resolution: {integrity: sha512-C1uWweJDgdtX2x600HjaFaucXTilT7tgUZHbOE4+ypskZ1OP8CRCSDkCxG6Vya9EwaFIVagWwpaVAn5wzypaqQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -1871,7 +1871,7 @@ snapshots:
 
   get-stream@6.0.1: {}
 
-  get-tsconfig@4.7.5:
+  get-tsconfig@4.7.6:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
@@ -2041,11 +2041,11 @@ snapshots:
 
   pirates@4.0.6: {}
 
-  postcss-load-config@6.0.1(tsx@4.16.0):
+  postcss-load-config@6.0.1(tsx@4.16.2):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
-      tsx: 4.16.0
+      tsx: 4.16.2
 
   punycode@2.3.1: {}
 
@@ -2158,7 +2158,7 @@ snapshots:
   tslib@2.6.3:
     optional: true
 
-  tsup@8.1.2(tsx@4.16.0)(typescript@5.5.3):
+  tsup@8.1.2(tsx@4.16.2)(typescript@5.5.3):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.23.0)
       cac: 6.7.14
@@ -2169,7 +2169,7 @@ snapshots:
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
-      postcss-load-config: 6.0.1(tsx@4.16.0)
+      postcss-load-config: 6.0.1(tsx@4.16.2)
       resolve-from: 5.0.0
       rollup: 4.18.1
       source-map: 0.8.0-beta.0
@@ -2183,10 +2183,10 @@ snapshots:
       - tsx
       - yaml
 
-  tsx@4.16.0:
+  tsx@4.16.2:
     dependencies:
       esbuild: 0.21.5
-      get-tsconfig: 4.7.5
+      get-tsconfig: 4.7.6
     optionalDependencies:
       fsevents: 2.3.3
 
