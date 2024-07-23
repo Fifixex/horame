@@ -28,7 +28,7 @@ importers:
         version: 2.0.9
       typescript:
         specifier: ^5.5.2
-        version: 5.5.3
+        version: 5.5.4
 
   apps/web:
     dependencies:
@@ -56,7 +56,7 @@ importers:
         version: 16.4.5
       typescript:
         specifier: ^5.5.2
-        version: 5.5.3
+        version: 5.5.4
 
   packages/typescript-config: {}
 
@@ -74,7 +74,7 @@ importers:
         version: link:../typescript-config
       tsup:
         specifier: ^8.1.2
-        version: 8.2.1(tsx@4.16.2)(typescript@5.5.3)
+        version: 8.2.1(tsx@4.16.2)(typescript@5.5.4)
 
 packages:
 
@@ -1202,8 +1202,8 @@ packages:
     resolution: {integrity: sha512-QaLaUL1CqblSKKPgLrFW3lZWkWG4pGBQNW+q1ScJB5v1D/nFWtsrD/yZljW/bdawg90ihi4/ftQJ3h6fz1FamA==}
     hasBin: true
 
-  typescript@5.5.3:
-    resolution: {integrity: sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==}
+  typescript@5.5.4:
+    resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2060,7 +2060,7 @@ snapshots:
   tslib@2.6.3:
     optional: true
 
-  tsup@8.2.1(tsx@4.16.2)(typescript@5.5.3):
+  tsup@8.2.1(tsx@4.16.2)(typescript@5.5.4):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.23.0)
       cac: 6.7.14
@@ -2080,7 +2080,7 @@ snapshots:
       sucrase: 3.35.0
       tree-kill: 1.2.2
     optionalDependencies:
-      typescript: 5.5.3
+      typescript: 5.5.4
     transitivePeerDependencies:
       - jiti
       - supports-color
@@ -2121,7 +2121,7 @@ snapshots:
       turbo-windows-64: 2.0.9
       turbo-windows-arm64: 2.0.9
 
-  typescript@5.5.3: {}
+  typescript@5.5.4: {}
 
   undici-types@5.26.5: {}
 
