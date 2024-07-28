@@ -11,14 +11,17 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.11.4",
+    "@prisma/client": "5.17.0",
     "@repo/ui": "workspace:*",
     "hono": "^4.4.10",
-    "oslo": "^1.2.1"
+    "oslo": "^1.2.1",
+    "prisma": "^5.17.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@repo/typescript-config": "workspace:*",
     "dotenv": "^16.4.5",
+    "pino": "^9.3.2",
     "typescript": "^5.5.2"
   }
 }
