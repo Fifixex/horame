@@ -28,7 +28,7 @@ importers:
         version: 2.0.9
       typescript:
         specifier: ^5.5.2
-        version: 5.5.3
+        version: 5.7.3
 
   apps/web:
     dependencies:
@@ -65,7 +65,7 @@ importers:
         version: 9.3.2
       typescript:
         specifier: ^5.5.2
-        version: 5.5.3
+        version: 5.7.3
 
   packages/typescript-config: {}
 
@@ -83,7 +83,7 @@ importers:
         version: link:../typescript-config
       tsup:
         specifier: ^8.1.2
-        version: 8.2.1(tsx@4.16.2)(typescript@5.5.3)
+        version: 8.2.1(tsx@4.16.2)(typescript@5.7.3)
 
 packages:
 
@@ -1077,6 +1077,7 @@ packages:
 
   oslo@1.2.1:
     resolution: {integrity: sha512-HfIhB5ruTdQv0XX2XlncWQiJ5SIHZ7NHZhVyHth0CSZ/xzge00etRyYy/3wp/Dsu+PkxMC+6+B2lS/GcKoewkA==}
+    deprecated: Package is no longer supported. Please see https://oslojs.dev for the successor project.
 
   package-json-from-dist@1.0.0:
     resolution: {integrity: sha512-dATvCeZN/8wQsGywez1mzHtTlP22H8OEfPrVMLNr4/eGa+ijtLn/6M5f0dY8UKNrC2O9UCU6SSoG3qRKnt7STw==}
@@ -1321,8 +1322,8 @@ packages:
     resolution: {integrity: sha512-QaLaUL1CqblSKKPgLrFW3lZWkWG4pGBQNW+q1ScJB5v1D/nFWtsrD/yZljW/bdawg90ihi4/ftQJ3h6fz1FamA==}
     hasBin: true
 
-  typescript@5.5.3:
-    resolution: {integrity: sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==}
+  typescript@5.7.3:
+    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2286,7 +2287,7 @@ snapshots:
   tslib@2.6.3:
     optional: true
 
-  tsup@8.2.1(tsx@4.16.2)(typescript@5.5.3):
+  tsup@8.2.1(tsx@4.16.2)(typescript@5.7.3):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.23.0)
       cac: 6.7.14
@@ -2306,7 +2307,7 @@ snapshots:
       sucrase: 3.35.0
       tree-kill: 1.2.2
     optionalDependencies:
-      typescript: 5.5.3
+      typescript: 5.7.3
     transitivePeerDependencies:
       - jiti
       - supports-color
@@ -2347,7 +2348,7 @@ snapshots:
       turbo-windows-64: 2.0.9
       turbo-windows-arm64: 2.0.9
 
-  typescript@5.5.3: {}
+  typescript@5.7.3: {}
 
   undici-types@5.26.5: {}
 
